@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry's portfolio</title>
+    <meta name="description" content="Portfolio for electric engineer">
+    <meta name="developer" content="terry">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src = 'main.js' defer></script>
+    <script src="https://kit.fontawesome.com/0e79d506ba.js"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+    <div class="navbar__logo">
+    <i class="fa-solid fa-dumbbell"></i>
+    <a href="#">Terry</a>    
+    </div>
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">Work</li>
+          <li class="navbar__menu__item">Wise-saying</li>
+          <li class="navbar__menu__item">Contact</li>
+      </ul>  
+    </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+    <img src="imgs/me.jpg" alt="Terry's photo" class="home__avatar">
+    <h1 class="home__title">My name is Terry</h1>
+    <h2 class="home__description">growing electric mechanical engineer</h2>
+    <button class="home__contact">Contact me</button>
+    </section>
+    <!-- About -->
+    <section id="about" class="section">
+    <h1>About me</h1>
+    <p>I'm a student, and my major is electric engineering and my favorite field is 
+    coding & weight-training & watching a moive(especially romantic-comedy, action)
+    My goal is making a amazing website which is very useful for all people....</p>
+    <div class="about__majors">
+        <div class="major">Electric-engineering</div>
+        <div class="major__icon"><i class="fa-solid fa-bolt"></i>
+        </div>
+        <div class="major__title">Creative ict electric-engineering in Chung-Ang-University</div>
+        <div class="major__description">Since 2019~ I have studied electrical engineering such as circuit,
+            mechanical math, electromagnetics....
+        </div>
+    </div>    
+    </section>
+    <!-- Skills -->
+    <section id="skill" class="section">
+    <div class="section__container">
+    <h1>Skills</h1>
+    <h2>Skills&Attributes</h2>
+    <p>
+    Let me show about my study progress, which is belongs to my major such as hardware&software ability, also it
+    will be changed as the time goes on, which means that my ability will be increased. And, my certifications are also
+    be written in this contents.
+    </p>
+    <div class="skillset">
+    <div class="skillset__left">
+    <h3 class="skillset__title">Skills</h3>
+    <div class="skill">
+        <div class="skill__description">
+            <span>web-making</span>
+            <span>50%</span>
+        </div>
+        <div class="skill__bar">
+            <div class="skill__value" style="width:50%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill__description">
+            <span>mechanical-math</span>
+            <span>60%</span>
+        </div>
+        <div class="skill__bar">
+            <div class="skill__value" style="width:60%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill__description">
+            <span>circuit</span>
+            <span>37%</span>
+        </div>
+        <div class="skill__bar">
+            <div class="skill__value" style="width:37%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill__description">
+            <span>electromagnetics</span>
+            <span>25%</span>
+        </div>
+        <div class="skill__bar">
+            <div class="skill__value" style="width:25%;"></div>
+        </div>
+    </div>
+    </div>
+    <div class="skillset__right">
+        <div class="skillset__certificate">
+            <h3 class="skillset__certificate__title">Certificate</h3>
+            <ul class="skillset__list">
+                <li><span><i class="fa-solid fa-computer"></i>computer skills level 1</span></li>
+                <li><span><i class="fa-solid fa-language"></i>chinese language society 3 level</span></li>
+                <li><span><i class="fa-light fa-uniform-martial-arts"></i>Taekwondo 3 dan</span></li>
+                <li><span><i class="fa-light fa-gem"></i>baduk-amateur 3 dan</span></li>
+            </ul>
+        </div>
+        <div class="skillset__hobby">
+            <h3 class="skillset__hobby__title">Hobby</h3>
+            <ul class="explain__list">
+                <li><span><i class="fa-solid fa-function"></i>Math</span></li>
+                <li><span><i class="fa-thin fa-person-running"></i>Running</span></li>
+                <li><span><i class="fa-solid fa-book"></i>Sdoku</span></li>
+                <li><span><i class="fa-solid fa-cup-togo"></i>study in cafe</span></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Work -->
+    <section id="work">
+    <h1>My work</h1>
+    <h3>projects</h3>
+    <div class="work__categories">
+        <button class="category__btn">All<span class="category__count">4</span></button>
+        <button class="category__btn">web-making<span class="category__count">2</span></button>
+        <button class="category__btn">aduino-making<span class="category__count">1</span></button>
+        <button class="category__btn">circuit<span class="category__count">1</span></button>
+    </div>
+    <div class="work__projects">
+    <img src="imgs/bicycle.jpg" alt="aduino">
+     <div class="project__description">
+         <h3>heat-bicycle</h3>
+         <span>it is a bicycle which get heat when you riding a bike</span>
+     </div>
+     <img src="imgs/web1.jpg" alt="website">
+     <div class="project__description">
+         <h3>website</h3>
+         <span>it is a website that dream-catching</span>
+     </div>
+     <img src="imgs/web2.jpg" alt="website">
+     <div class="project__description">
+         <h3>webstie</h3>
+         <span>it is a website that place-visiting</span>
+     </div>
+     <img src="imgs/circuit.jpg" alt="circuit">
+     <div class="project__description">
+         <h3>circuit</h3>
+         <span>it is a record of my circuit study</span>
+     </div>  
+    </div>
+    </section>
+    <!--wise-saying-->
+    <section id="wise-saying">
+        <div class="movie__saying">
+        <img src="imgs/midnight.jpg" alt="midnight" class="movie"   
+        <p>If you stay here, it becomes your present. Then pretty soon you will start imaging another time was
+        really your golden time. That's what the present is. It's a little unsatisfying because
+        life is so little unsatisfying.
+        </p>
+        <p class="movie">midnight in paris</p>
+        </div>
+        <div class="famous__person__saying">
+        <img src="imgs/imagination.jpg" alt="imagination" class="movie">
+        <p>To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel,
+        that's the purpose of the life
+        </p>    
+        <p class="movie">midnight in paris</p>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">sms85327548@gmail.com</h2>
+        <a href="https://www.instagram.com/terryseok/" class="contact__links">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        <p class="contact__number"><i class="fa-solid fa-phone"></i>Tel-010-9248-0578</p>
+    </section>
+</body>
+</html>
