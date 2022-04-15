@@ -1,0 +1,184 @@
+/*Global*/
+:root{
+    /*Color*/
+
+    /*Font-size*/
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /*Font weight*/
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /*Size*/
+    --size-border-radius: 4px;
+}
+/*Universal tags*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+margin:0px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style:none;
+}
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+    outline:none;
+}
+
+/*Typography*/
+h1{
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color_black); 
+    margin: 16px 0px;
+}
+h2{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+h3{
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+
+}
+
+p{
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
+
+
+/*Navbar*/
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    background-color:black;
+    align-items:center;
+    color:white;
+}
+
+.navbar__menu{
+    display:flex;
+}
+.navbar__logo{
+    font-size: var(--font-medium);
+    font-weight:var(--weight-semi-bold);
+}
+.navbar__menu__item{
+    padding: 8px 12px;
+    margin: 0px 4px;
+    cursor: pointer;
+    border-radius:var(--size-border-radius);
+}
+.navbar__menu__item.active{
+    border:1px solid white;
+}
+
+.navbar__menu__item:hover{
+    background-color: greenyellow;
+
+}
+
+/*Home*/
+#home{
+    background: url('imgs/background.png') center/cover no-repeat;
+    padding: 40px;
+    text-align:center;
+}
+
+.home__avatar{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    border:2px solid 
+}
+
+.home__contact{
+    margin:24px;
+    padding:8px 12px;
+    border:2px solid;
+}
+
+/*Section common*/
+.section{
+    padding: 50px;
+    text-align:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section__container{
+    max-width:1200px;
+    margin: auto;
+}
+
+/*About*/
+.about__majors{
+    display:flex;
+    justify-content:space-between;
+    margin:80px 0;
+}
+
+/*Skill*/
+
+#skill{
+    background-color: yellowgreen;
+    margin:32px;
+
+}
+.skillset{
+    display:flex;
+    margin:20px 0;
+}
+.skillset__left{
+    flex-basis:60%;
+    background-color: chocolate;
+    padding:20px 40px;
+}
+.skillset__right{
+    flex-basis:40%;
+}   
+.skillset__certificate{
+background-color: burlywood;
+}
+.skillset__hobby{
+    background-color: brown
+}
+.skill__description{
+    display:flex;
+    justify-content: space-between;
+}
+.skill__bar{
+    width:100%;
+    height:3px;
+    background-color:darkorchid;
+}
+.skill__value{
+    width:100%;
+    height:3px;
+    background-color:black;
+}
