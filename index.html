@@ -24,12 +24,12 @@
     </div>
     <div class="navbar__menu">
       <ul class="navbar__menu">
-          <li class="navbar__menu__item">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">Work</li>
-          <li class="navbar__menu__item">Wise-saying</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">Work</li>
+          <li class="navbar__menu__item" data-link="#wise-saying">Wise-saying</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>  
     </div>
 
@@ -40,10 +40,12 @@
     </nav>
     <!-- Home -->
     <section id="home">
+    <div class="home__container">
     <img src="imgs/me.jpg" alt="Terry's photo" class="home__avatar">
     <h1 class="home__title">My name is Terry</h1>
     <h2 class="home__description">growing electric mechanical engineer</h2>
-    <button class="home__contact">Contact me</button>
+    <button class="home__contact" data-link="#contact">Contact me</button>
+    </div>
     </section>
     <!-- About -->
     <section id="about" class="section">
@@ -77,7 +79,7 @@
      </div>   
     </section>
     <!-- Skills -->
-    <section id="skill" class="section">
+    <section id="skills" class="section">
     <div class="section__container">
     <h1>Skills</h1>
     <h2>Skills&Attributes</h2>
@@ -150,7 +152,7 @@
     </div>
     </section>
     <!-- Work -->
-    <section id="work" class="section">
+    <section id="work"class="section">
     <div class ="work__title">
     <h1>My work</h1>
     <h3>projects</h3>
@@ -203,7 +205,7 @@
         <div class="phrase">
         <p>If you stay here, it becomes your present. Then pretty soon you will start imaging another time was
         really your golden time. That's what the present is. It's a little unsatisfying because
-        life is so little unsatisfying. <strong>-midnight in Paris-</strong>
+        life is so little unsatisfying. <strong><p>-midnight in Paris-</p></strong>
         </p>
         </div>
         </div>
@@ -211,7 +213,7 @@
         <img src="imgs/imagination.jpg" alt="imagination" class="movie">
         <div class="phrase">
         <p>To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel,
-        that's the purpose of the life <strong>-Walter's imagination becomes reality-</strong>
+        that's the purpose of the life <strong><p>-Walter's imagination becomes reality-</p></strong>
         </p>
         </div>    
         </div>

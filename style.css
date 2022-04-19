@@ -77,13 +77,19 @@ p{
 
 /*Navbar*/
 #navbar{
+    position:fixed;
+    width:100%;
     display:flex;
     justify-content: space-between;
-    background-color:black;
+    background-color:transparent;
     align-items:center;
     color:white;
+    z-index: 1;
 }
 
+#navbar.navbar--dark{
+    background-color:lightcoral;
+}
 .navbar__menu{
     display:flex;
 }
@@ -120,8 +126,11 @@ p{
     background: url('imgs/background.png') center/cover no-repeat;
     padding: 40px;
     text-align:center;
+    padding-top:100px;
 }
-
+#home.home--dark{
+    background-color: transparent;
+}
 .home__avatar{
     width:250px;
     height:250px;
