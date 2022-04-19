@@ -32,6 +32,11 @@
           <li class="navbar__menu__item">Contact</li>
       </ul>  
     </div>
+
+    <!--Toggle Button-->
+    <button class="navbar__toggle-btn">
+    <i class="fa-solid fa-bars"></i>
+    </button>
     </nav>
     <!-- Home -->
     <section id="home">
@@ -47,14 +52,29 @@
     coding & weight-training & watching a moive(especially romantic-comedy, action)
     My goal is making a amazing website which is very useful for all people....</p>
     <div class="about__majors">
-        <div class="major">Electric-engineering</div>
-        <div class="major__icon"><i class="fa-solid fa-bolt"></i>
+    <div class="major">
+            <div class="major__icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="major__title"><h2>Html</h2></div>
+            <div class="major__description">structure of website, which is a basic tool</div>
+            </div>
+    <div class="major">
+        <div class="major__icon"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="major__title"><h2>Css</h2></div>
+        <div class="major__description">decoration of website, which is a basic tool</div>
         </div>
-        <div class="major__title">Creative ict electric-engineering in Chung-Ang-University</div>
-        <div class="major__description">Since 2019~ I have studied electrical engineering such as circuit,
-            mechanical math, electromagnetics....
+     <div class="major">
+        <div class="major__icon"><i class="fa-brands fa-js"></i></div>
+        <div class="major__title"><h2>Js</h2></div>
+        <div class="major__description">Being responsive in website, which is a basic tool</div>
         </div>
-    </div>    
+    </div>
+     <div class="degree">
+         <div class="degree__image"><img src="imgs/chungang.jpg.jpg" width="100" height="100"></div>
+         <div class="degree__description">
+         <p class="Univ">Electrical Engingeering in ChungAng University</p>
+         <p class="period">since 2019~ ing</p>
+         </div>
+     </div>   
     </section>
     <!-- Skills -->
     <section id="skill" class="section">
@@ -112,7 +132,7 @@
             <ul class="skillset__list">
                 <li><span><i class="fa-solid fa-computer"></i>computer skills level 1</span></li>
                 <li><span><i class="fa-solid fa-language"></i>chinese language society 3 level</span></li>
-                <li><span><i class="fa-light fa-uniform-martial-arts"></i>Taekwondo 3 dan</span></li>
+                <li><span><i class="fa-solid fa-uniform-martial-arts"></i>Taekwondo 3 dan</span></li>
                 <li><span><i class="fa-light fa-gem"></i>baduk-amateur 3 dan</span></li>
             </ul>
         </div>
@@ -130,58 +150,75 @@
     </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
+    <div class ="work__title">
     <h1>My work</h1>
     <h3>projects</h3>
+    </div>
     <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">4</span></button>
-        <button class="category__btn">web-making<span class="category__count">2</span></button>
-        <button class="category__btn">aduino-making<span class="category__count">1</span></button>
+        <button class="category__btn active">All<span class="category__count">4</span></button>
+        <button class="category__btn">web<span class="category__count">2</span></button>
+        <button class="category__btn">aduino<span class="category__count">1</span></button>
         <button class="category__btn">circuit<span class="category__count">1</span></button>
     </div>
     <div class="work__projects">
-    <img src="imgs/bicycle.jpg" alt="aduino">
+    <div class="project">   
+    <img src="imgs/bicycle.jpg" alt="aduino" class="project__image">
      <div class="project__description">
          <h3>heat-bicycle</h3>
          <span>it is a bicycle which get heat when you riding a bike</span>
      </div>
-     <img src="imgs/web1.jpg" alt="website">
+     </div>
+     <div class="project">   
+     <img src="imgs/web1.jpg" alt="website" class="project__image">
      <div class="project__description">
          <h3>website</h3>
          <span>it is a website that dream-catching</span>
      </div>
-     <img src="imgs/web2.jpg" alt="website">
+     </div>
+     <div class="project">   
+     <img src="imgs/web2.jpg" alt="website" class="project__image">
      <div class="project__description">
          <h3>webstie</h3>
          <span>it is a website that place-visiting</span>
      </div>
-     <img src="imgs/circuit.jpg" alt="circuit">
+     </div>
+     <div class="project">   
+     <img src="imgs/circuit2.jpg" alt="circuit" class="project__image">
      <div class="project__description">
          <h3>circuit</h3>
          <span>it is a record of my circuit study</span>
+     </div>
      </div>  
     </div>
     </section>
+
     <!--wise-saying-->
-    <section id="wise-saying">
-        <div class="movie__saying">
-        <img src="imgs/midnight.jpg" alt="midnight" class="movie"   
+    <section id="wise-saying" class="section">
+        <div class="section__container">
+        <h1>Wise-saying</h1>
+        <h3>which is came from the movies</h3>
+        <div class="famous__person__saying">
+        <img src="imgs/midnight.jpg" alt="midnight" class="movie">   
+        <div class="phrase">
         <p>If you stay here, it becomes your present. Then pretty soon you will start imaging another time was
         really your golden time. That's what the present is. It's a little unsatisfying because
-        life is so little unsatisfying.
+        life is so little unsatisfying. <strong>-midnight in Paris-</strong>
         </p>
-        <p class="movie">midnight in paris</p>
+        </div>
         </div>
         <div class="famous__person__saying">
         <img src="imgs/imagination.jpg" alt="imagination" class="movie">
+        <div class="phrase">
         <p>To see the world, things dangerous to come to, to see behind walls, to draw closer, to find each other and to feel,
-        that's the purpose of the life
-        </p>    
-        <p class="movie">midnight in paris</p>
+        that's the purpose of the life <strong>-Walter's imagination becomes reality-</strong>
+        </p>
+        </div>    
+        </div>
         </div>
     </section>
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">sms85327548@gmail.com</h2>
         <a href="https://www.instagram.com/terryseok/" class="contact__links">
