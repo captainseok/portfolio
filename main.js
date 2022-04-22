@@ -45,11 +45,52 @@ document.addEventListener("scroll", () => {
 home.style.opacity = 1 - window.scrollY / homeHeight; //사이트의 Y축 좌표값에 대한 homeHeigh의 비율을 조정해 점점 내려갈수록 opcity값이 0되어 투명도가 활성화된다.
 });
 
-
-
-
-
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:"smooth"});
 }
+
+
+//scrolling시 button이 화면에 출력되로혹 하면 된다
+//scroll시 이벤트를 출력!
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll',()=>{
+ if(window.scrollY> homeHeight/2){
+    arrowUp.classList.add('visible');
+ }
+ else{
+    arrowUp.classList.remove('visible');
+ }
+});
+
+
+arrowUp.addEventListener('click',()=>{
+    scrollIntoView('#home');
+});
+
+//버튼을 누를때 누른 아이템만 나오는거
+
+const categoryBtn = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+categoryBtn.addEventListener('click',(e)=>{
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if(filter == null){
+        return;
+    }
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=>{
+    console.log(filter);
+    projects.forEach((project) =>{
+        console.log(project.dataset.type);
+        if(filter ==='*' || filter ===project.dataset.type){
+            project.classList.remove('invisible');
+        }
+        else{
+            project.classList.add('invisible');
+        }
+    });
+
+        projectContainer.classList.remove('anim-out');
+    },300);
+})
