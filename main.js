@@ -78,6 +78,7 @@ categoryBtn.addEventListener('click',(e)=>{
     if(filter == null){
         return;
     }
+    categoryBtn.classList.remove('active');
     projectContainer.classList.add('anim-out');
     setTimeout(()=>{
     console.log(filter);
@@ -94,3 +95,11 @@ categoryBtn.addEventListener('click',(e)=>{
         projectContainer.classList.remove('anim-out');
     },300);
 })
+//768px이하일때 메뉴버튼을 click하여 메뉴리스트를 볼수 있도록!!
+
+
+const toggleBtn = document.querySelector(".navbar__toggle-btn");
+const openMenu = document.querySelector(".navbar__menu");
+toggleBtn.addEventListener('click', ()=> {
+    openMenu.classList.toggle('active');
+});

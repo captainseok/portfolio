@@ -31,7 +31,6 @@ margin:0px;
 
 a{
     text-decoration: none;
-    color:white;
 }
 ul{
     list-style: none;
@@ -85,12 +84,14 @@ nav{
     justify-content: space-between;
     background-color:transparent;
     align-items:center;
-    color:white;
+    color:black;
     z-index: 1;
 }
-
+.navbar__name{
+    color:black;
+}
 #navbar.navbar--dark{
-    background-color:lightcoral;
+    background-color:rgba(255, 241, 196, 0.863);
 }
 .navbar__menu{
     display:flex;
@@ -122,6 +123,7 @@ nav{
 
 }
 
+
 /*Home*/
 #home{
     background: url('imgs/background.png') center/cover no-repeat;
@@ -144,7 +146,9 @@ nav{
     padding:8px 12px;
     border:2px solid;
 }
-
+.home__contact:hover{
+    background-color: darkgoldenrod;
+}
 /*Section common*/
 .section{
     text-align: center;
@@ -371,18 +375,27 @@ background-color: burlywood;
 
 /*For below 768px screen width*/
 @media screen and (max-width:768px){
-    .navbar__toggle-btn{
-        display: block;
-    }
     #navbar{
         flex-direction: column;
         align-items:flex-start;
+    }
+    #navbar.navbar__dark{
+        padding:16px;
+    }
+    .navbar__toggle-btn{
+        display: block;
     }
     .navbar__menu{
         flex-direction: column;
         text-align:center;
         width:100%;
         display:none;
+    }
+    .navbar__menu.active{
+        display:flex;
+        flex-direction: column;
+        background-color: rgba(255, 241, 196, 0.863);
+        width:100vw;
     }
     .about__majors{
         flex-direction: column;
@@ -393,11 +406,28 @@ background-color: burlywood;
     .skillset{
         flex-direction: column;
     }
+    .work__categories{
+        display:flex;
+        flex-direction: column;
+    }
     .project{
         flex-grow:1
     }
+    .famous__person__saying{
+        display:flex;
+        flex-direction: column;
+    }
+    
     .movie{
-        width:80px;
-        height:80px;
+        width:100px;
+        height:100px;
+        align-self: center;
+    }
+    .arrow-up{
+        width:50px;
+        height:50px;
+        font-size:30px;
+        right:16px;
+        bottom:16px;
     }
 }
